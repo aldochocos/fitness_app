@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+//view component
 @Component({
   selector: 'app-auth-form',
   templateUrl: './auth-form.component.html',

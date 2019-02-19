@@ -4,11 +4,15 @@ import { CommonModule } from '@angular/common';
 import { RegisterRoutingModule } from './register-routing.module';
 import { RegisterComponent } from './containers/register/register.component';
 
+//shared module
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [RegisterComponent],
   imports: [
     CommonModule,
-    RegisterRoutingModule
+    RegisterRoutingModule,
+    SharedModule
   ]
 })
 export class RegisterModule { }
