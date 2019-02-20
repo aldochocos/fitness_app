@@ -21,7 +21,7 @@ import { SharedModule } from './shared/shared.module';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    SharedModule,
+    SharedModule.forRoot(),
     
   ]
 })

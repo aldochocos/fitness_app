@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<div>
+    <button (click)="onLogout()">Log out</button>
+    <div class="wrapper">
+
+        User: {{ user$ | async | json }}
+        <router-outlet></router-outlet>
+    </div>
+</div>

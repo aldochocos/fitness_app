@@ -1,9 +1,19 @@
+//angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//store management
+import { Store } from '../store';
+
+//routing
 import { AppRoutingModule } from './app-routing.module';
+
+//containers
 import { AppComponent } from './app.component';
+
+//feature modules
 import { AuthModule } from './auth/auth.module';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +24,9 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     AuthModule
   ],
-  providers: [],
+  providers: [
+    Store
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
